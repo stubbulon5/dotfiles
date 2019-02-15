@@ -36,4 +36,7 @@ and then you change your shell to zsh
 chsh -s `which zsh`
 and then restart
 
+set theme to Agnoster
+sudo apt-get install fonts-powerline
+
 sudo shutdown -r 0
