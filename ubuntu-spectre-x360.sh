@@ -12,3 +12,12 @@ sudo apt dist-upgrade
 
 # To remove
 ppa-purge ppa:oibaf/graphics-drivers
+
+
+# Bootstrap
+sudo apt install vim  
+
+echo "" > ~/.vimrc.local
+
+git clone --recursive https://github.com/stubbulon5/dotfiles.git .dotfiles \
+    && cd .dotfiles && ./bin/dfm install && vim +PluginUpdate
