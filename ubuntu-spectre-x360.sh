@@ -21,3 +21,19 @@ echo "" > ~/.vimrc.local
 
 git clone --recursive https://github.com/stubbulon5/dotfiles.git .dotfiles \
     && cd .dotfiles && ./bin/dfm install && vim +PluginUpdate
+    
+    
+    
+#oh my zsh
+
+apt-get install zsh
+apt-get install git-core
+Getting zsh to work in ubuntu is weird, since sh does not understand the source command. So, you do this to install zsh
+
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+and then you change your shell to zsh
+
+chsh -s `which zsh`
+and then restart
+
+sudo shutdown -r 0
